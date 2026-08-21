@@ -2,6 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteMenu = document.querySelector(".site-nav");
 const menuLinks = document.querySelectorAll(".site-nav a");
 const currentYear = document.querySelector("#current-year");
+const contactForm = document.querySelector("#contact-form");
 
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
@@ -25,5 +26,36 @@ if (navToggle && siteMenu) {
       siteMenu.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
     }
+  });
+}
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) {
+      return;
+    }
+
+    const formData = new FormData(contactForm);
+    const nombre = formData.get("nombre") || "";
+    const empresa = formData.get("empresa") || "";
+    const email = formData.get("email") || "";
+    const servicio = formData.get("servicio") || "";
+    const mensaje = formData.get("mensaje") || "";
+    const subject = encodeURIComponent(`Consulta web Efmarco - ${servicio}`);
+    const body = encodeURIComponent(
+      [
+        `Nombre: ${nombre}`,
+        `Empresa o institución: ${empresa}`,
+        `Email: ${email}`,
+        `Servicio de interés: ${servicio}`,
+        "",
+        "Mensaje:",
+        mensaje,
+      ].join("\n")
+    );
+
+    window.location.href = `mailto:info@efmarco.com.ar?subject=${subject}&body=${body}`;
   });
 }
