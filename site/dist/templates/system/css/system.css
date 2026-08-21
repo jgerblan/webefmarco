@@ -1,0 +1,71 @@
+/**
+ * @copyright	(C) 2007 Open Source Matters, Inc. <https://www.joomla.org>
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* Import project-level system CSS */
+@import url(../../../media/system/css/system.css);
+
+/* Unpublished */
+.system-unpublished, tr.system-unpublished {
+	background: #e8edf1;
+	border-top: 4px solid #c4d3df;
+	border-bottom: 4px solid #c4d3df;
+}
+
+span.highlight {
+	background-color:#FFFFCC;
+	font-weight:bold;
+	padding:1px 0;
+}
+
+.img-fulltext-float-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.img-fulltext-float-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.img-fulltext-float-none {
+}
+
+.img-intro-float-right {
+	float: right;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.img-intro-float-left {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.img-intro-float-none {
+}
+/*
+     FILE ARCHIVED ON 08:00:00 Jun 15, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:04:51 Aug 21, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.356
+  exclusion.robots: 0.039
+  exclusion.robots.policy: 0.032
+  esindex: 0.005
+  cdx.remote: 6.104
+  LoadShardBlock: 124.217 (3)
+  PetaboxLoader3.datanode: 100.254 (5)
+  PetaboxLoader3.resolve: 159.856 (2)
+  load_resource: 139.933
+  loaddict: 24.113
+*/

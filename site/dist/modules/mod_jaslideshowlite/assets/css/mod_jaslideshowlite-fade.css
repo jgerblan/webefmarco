@@ -1,0 +1,52 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Slideshow Lite Module for J25 & J3.3
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+ */
+
+
+/* Fading */
+.ja-ss-wrap.fade {
+	opacity: 1;
+}
+.fade .ja-ss-item.animate {
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.fade .ja-ss-item {
+	opacity: 0;
+}
+.fade .ja-ss-item.curr {
+	opacity: 1;
+}
+
+/*
+     FILE ARCHIVED ON 07:57:42 Jun 15, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:02:39 Aug 21, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.451
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.061
+  esindex: 0.007
+  cdx.remote: 5.041
+  LoadShardBlock: 54.278 (3)
+  PetaboxLoader3.datanode: 78.471 (5)
+  PetaboxLoader3.resolve: 176.585 (3)
+  load_resource: 212.526
+  loaddict: 28.169
+*/
