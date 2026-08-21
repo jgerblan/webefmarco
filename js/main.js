@@ -55,7 +55,13 @@ if (contactForm) {
         mensaje,
       ].join("\n")
     );
+    const mailtoUrl = `mailto:info@efmarco.com.ar?subject=${subject}&body=${body}`;
 
-    window.location.href = `mailto:info@efmarco.com.ar?subject=${subject}&body=${body}`;
+    if (mailtoUrl.length > 1800) {
+      window.alert("El mensaje es demasiado largo para enviarlo desde el navegador. Por favor resumilo o escribinos directamente a info@efmarco.com.ar.");
+      return;
+    }
+
+    window.location.href = mailtoUrl;
   });
 }
