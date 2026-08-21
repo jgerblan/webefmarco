@@ -3,7 +3,7 @@ const siteMenu = document.querySelector(".site-nav");
 const menuLinks = document.querySelectorAll(".site-nav a");
 const currentYear = document.querySelector("#current-year");
 const contactForm = document.querySelector("#contact-form");
-const MAILTO_URL_LIMIT = 2000;
+const MAILTO_URL_LIMIT = 6000;
 
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
