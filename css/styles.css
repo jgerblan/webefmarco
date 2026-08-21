@@ -366,9 +366,10 @@ textarea {
   padding: 2rem;
 }
 
-.hero-card--main h2 {
+.hero-card__title {
   margin: 0.45rem 0 1rem;
   font-size: 2rem;
+  font-weight: 800;
 }
 
 .hero-card--main ul {
