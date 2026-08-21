@@ -2082,6 +2082,19 @@ input.invalid {
 .t3-spotlight-1 .t3-module[class*="box-background-"] {
   width: 100%;
 }
+/* Reservar el mismo alto para el titulo (algunos, como "Inst. Gubernamentales",
+   ocupan 2 lineas y otros 1 linea) para que los 4 cuadros queden con igual
+   altura en cualquier resolucion de escritorio */
+@media (min-width: 980px) {
+  .t3-spotlight-1 .t3-module[class*="box-background-"] .module-title {
+    min-height: 46px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .t3-spotlight-1 .t3-module[class*="box-background-"] .module-title {
+    min-height: 28px;
+  }
+}
 @media (max-width: 979px) {
   .t3-spotlight-1 .t3-module[class*="box-background-"] .module-title {
     font-size: 12px;
@@ -2142,6 +2155,11 @@ input.invalid {
   }
   .t3-spotlight-1 .module-title {
     margin-bottom: 4px;
+  }
+  /* Reservar el mismo alto para el titulo (1 o 2 lineas) para que los 4
+     cuadros queden con igual altura tambien en celulares */
+  .t3-spotlight-1 .t3-module[class*="box-background-"] .module-title {
+    min-height: 28px;
   }
 }
 .t3-module.box-background-secondary {
